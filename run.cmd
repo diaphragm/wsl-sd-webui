@@ -1,1 +1,1 @@
-wsl -d ubuntu -- bash -i run.sh
+wsl -d ubuntu -- bash -i sh/run.sh

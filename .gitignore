@@ -1,4 +1,4 @@
-ckpt
 stable-diffusion-webui/
-outputs/
 config/
+ckpt/*
+outputs/*
