@@ -54,4 +54,5 @@ conda activate automatic
 cd stable-diffusion-webui
 python webui.py --ckpt "../ckpt/$ckpt" $opt_arg \
   --ui-settings-file ../config/config.json \
-  --ui-config-file ../config/ui-config.json
+  --ui-config-file ../config/ui-config.json \
+  --hide-ui-dir-config
