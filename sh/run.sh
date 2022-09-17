@@ -14,11 +14,11 @@ esac
 echo
 
 read -p  "Select optimize
-  o) lowvram, split attention
+  o) medvram, split attention
   n) none (*)
 > " ans
 case "$ans" in
-  o) opt_arg="--lowvram --opt-split-attention";h=1600;w=2560;c=1;;
+  o) opt_arg="--medvram --opt-split-attention";h=1600;w=2560;c=1;;
   n) opt_arg="";h=512;w=512;c=4;;
   *) opt_arg="";h=512;w=512;c=4;;
 esac
