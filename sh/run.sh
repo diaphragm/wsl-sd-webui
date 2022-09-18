@@ -30,3 +30,5 @@ python webui.py $opt_arg \
   --ckpt-dir ../ckpt \
   --ui-settings-file ../config/config.json \
   --ui-config-file ../config/ui-config.json \
+  --embeddings-dir ../embedding \
+  --allow-code

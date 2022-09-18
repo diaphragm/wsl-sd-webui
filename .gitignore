@@ -1,6 +1,7 @@
 stable-diffusion-webui/
 config/
 ckpt/*
+embedding/*
 outputs/*
 token
 !.gitkeep
