@@ -1,5 +1,6 @@
 stable-diffusion-webui/
 config/
+tmp/
 ckpt/*
 embedding/*
 outputs/*

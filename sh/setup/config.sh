@@ -9,5 +9,6 @@ echo '{
   "outdir_img2img_grids": "../outputs/img2img-grids",
   "save_to_dirs": true,
   "grid_save_to_dirs": true,
-  "directories_filename_pattern": "[model_hash]"
+  "directories_filename_pattern": "[model_hash]",
+  "add_model_hash_to_info": true
 }' > config/config.json
