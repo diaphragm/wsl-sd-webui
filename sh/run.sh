@@ -3,9 +3,9 @@ read -p  "Select optimize
   n) none (*)
 > " ans
 case "$ans" in
-  o) opt_arg="--medvram --opt-split-attention";h=3840;w=2176;c=1;;
-  n) opt_arg="";h=512;w=512;c=4;;
-  *) opt_arg="";h=512;w=512;c=4;;
+  o) opt_arg="--medvram";h=3840;w=2176;c=1;;
+  n) opt_arg="--disable-opt-split-attention";h=512;w=512;c=4;;
+  *) opt_arg="--disable-opt-split-attention";h=512;w=512;c=4;;
 esac
 echo
 
