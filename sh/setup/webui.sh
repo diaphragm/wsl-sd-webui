@@ -17,6 +17,7 @@ git clone https://github.com/CompVis/stable-diffusion.git repositories/stable-di
 git clone https://github.com/CompVis/taming-transformers.git repositories/taming-transformers
 git clone https://github.com/sczhou/CodeFormer.git repositories/CodeFormer
 git clone https://github.com/salesforce/BLIP.git repositories/BLIP
+git clone https://github.com/Hafiidz/latent-diffusion repositories/latent-diffusion
 
 # install requirements of Stable Diffusion
 pip install transformers==4.19.2 diffusers invisible-watermark --prefer-binary
@@ -35,3 +36,8 @@ pip install -r requirements.txt  --prefer-binary
 
 # update numpy to latest version
 pip install -U numpy  --prefer-binary
+
+
+wget -P SwinIR \
+  https://github.com/JingyunLiang/SwinIR/releases/download/v0.0/003_realSR_BSRGAN_DFOWMFC_s64w8_SwinIR-L_x4_GAN.pth \
+  https://github.com/JingyunLiang/SwinIR/releases/download/v0.0/003_realSR_BSRGAN_DFOWMFC_s64w8_SwinIR-L_x4_PSNR.pth
