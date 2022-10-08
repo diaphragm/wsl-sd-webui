@@ -16,7 +16,8 @@ echo '
   "txt2img/Width/maximum": 4096,
   "txt2img/Height/maximum": 4096,
   "txt2img/Batch size/value": '$c',
-  "txt2img/Batch count/maximum": 200
+  "txt2img/Batch count/maximum": 200,
+  "txt2img/Batch size/maximum": 25
 }
 ' > config/ui-config.json
 

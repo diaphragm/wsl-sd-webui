@@ -15,18 +15,18 @@ wget https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pt
 mkdir repositories
 git clone https://github.com/CompVis/stable-diffusion.git repositories/stable-diffusion
 git clone https://github.com/CompVis/taming-transformers.git repositories/taming-transformers
+git clone https://github.com/crowsonkb/k-diffusion.git repositories/k-diffusion
 git clone https://github.com/sczhou/CodeFormer.git repositories/CodeFormer
 git clone https://github.com/salesforce/BLIP.git repositories/BLIP
-git clone https://github.com/Hafiidz/latent-diffusion repositories/latent-diffusion
 
 # install requirements of Stable Diffusion
 pip install transformers==4.19.2 diffusers invisible-watermark --prefer-binary
 
-# install k-diffusion
-pip install git+https://github.com/crowsonkb/k-diffusion.git --prefer-binary
-
 # (optional) install GFPGAN (face restoration)
 pip install git+https://github.com/TencentARC/GFPGAN.git --prefer-binary
+
+# (optional) install CLIP
+pip install git+https://github.com/openai/CLIP.git --prefer-binary
 
 # (optional) install requirements for CodeFormer (face restoration)
 pip install -r repositories/CodeFormer/requirements.txt --prefer-binary
