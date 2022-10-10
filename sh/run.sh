@@ -32,4 +32,6 @@ python webui.py $opt_arg \
   --ui-settings-file ../config/config.json \
   --ui-config-file ../config/ui-config.json \
   --embeddings-dir ../embedding \
+  --xformers \
+  --deepdanbooru \
   --allow-code
