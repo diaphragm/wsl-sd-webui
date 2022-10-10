@@ -8,6 +8,7 @@ case "$ans" in
   *) opt_arg="";h=512;w=512;c=4;;
 esac
 echo
+echo "Optimization: $opt_arg"
 
 echo '
 {
@@ -21,17 +22,16 @@ echo '
 }
 ' > config/ui-config.json
 
-echo "Optimization: $opt_arg"
-
-eval "$(conda shell.bash hook)"
-conda activate automatic
-
 cd stable-diffusion-webui
-python webui.py $opt_arg \
+
+echo "export COMMANDLINE_ARGS='$opt_arg \
   --ckpt-dir ../ckpt \
   --ui-settings-file ../config/config.json \
   --ui-config-file ../config/ui-config.json \
   --embeddings-dir ../embedding \
   --xformers \
   --deepdanbooru \
-  --allow-code
+  --allow-code \
+'" > webui-user.sh
+
+bash webui.sh
