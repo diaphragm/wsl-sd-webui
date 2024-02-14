@@ -9,6 +9,7 @@ echo '{
   "outdir_img2img_grids": "../outputs/img2img-grids",
   "save_to_dirs": true,
   "grid_save_to_dirs": true,
-  "directories_filename_pattern": "[model_hash]",
+  "directories_filename_pattern": "[model_name].[model_hash]",
+  "quicksettings": "sd_model_checkpoint,sd_vae,CLIP_stop_at_last_layers",
   "add_model_hash_to_info": true
 }' > config/config.json
