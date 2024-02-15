@@ -28,10 +28,14 @@ echo "export COMMANDLINE_ARGS='$opt_arg \
   --ckpt-dir ../models/ckpt \
   --vae-dir ../models/vae \
   --lora-dir ../models/lora \
+  --hypernetwork-dir ../models/hypernetwork \
   --embeddings-dir ../embedding \
   --ui-settings-file ../config/config.json \
   --ui-config-file ../config/ui-config.json \
   --allow-code \
+  --medvram \
+  --no-half-vae \
+  --opt-sdp-attention --opt-sdp-no-mem-attention \
 '" > webui-user.sh
 
 bash webui.sh
