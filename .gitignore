@@ -1,8 +1,10 @@
 stable-diffusion-webui/
 config/
 tmp/
-ckpt/*
+models/*
 embedding/*
 outputs/*
+train/
+trash/
 token
 !.gitkeep
